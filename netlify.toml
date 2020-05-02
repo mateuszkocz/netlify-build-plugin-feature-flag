@@ -1,0 +1,4 @@
+[[plugins]]
+  package = "./netlify-plugin-feature-flag"
+  [plugins.inputs]
+  test = "test input value"

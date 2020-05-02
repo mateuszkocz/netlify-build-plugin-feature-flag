@@ -1,0 +1,5 @@
+name: netlify-plugin-feature-flag
+inputs:
+  - name: test
+    description: test arg
+    required: true
