@@ -11,12 +11,15 @@ module.exports = {
     const allow = inputs["allow"]
 
     // DEBUG
-    console.log(args)
+    console.log(args.inputs)
     console.log(process.env)
-    console.log(args.utils.git)
 
-    console.log(currentUrl === configUrl, currentBranch.startsWith(branchPrefix))
-    console.log(currentUrl, configUrl)
+    console.log("currentUrl", currentUrl)
+    console.log("configUrl", configUrl)
+    console.log("branchPrefix", branchPrefix)
+    console.log("currentBranch", currentBranch)
+    console.log("ignore", ignore)
+    console.log("allow", allow)
 
     if (currentUrl === configUrl) {
       const match = currentBranch.startsWith(branchPrefix)
