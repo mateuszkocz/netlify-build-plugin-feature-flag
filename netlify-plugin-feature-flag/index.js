@@ -6,7 +6,7 @@ module.exports = {
     const currentUrl = removeProtocol(process.env.URL)
     const configUrl = removeProtocol(inputs["for-url"])
     const branchPrefix = inputs["branch-prefix"]
-    const currentBranch = process.env.BRANCH
+    const currentBranch = process.env.HEAD
     const ignore = inputs["ignore"]
     const allow = inputs["allow"]
 
