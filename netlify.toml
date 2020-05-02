@@ -1,4 +1,15 @@
 [[plugins]]
   package = "./netlify-plugin-feature-flag"
+
   [plugins.inputs]
-  test = "test input value"
+    for-url = "https://adoring-lamarr-477796.netlify.app"
+    branch-prefix = "feat"
+    ignore = true
+
+[[plugins]]
+  package = "./netlify-plugin-feature-flag"
+
+  [plugins.inputs]
+    for-url = "https://tender-northcutt-5ff57a.netlify.app"
+    branch-prefix = "feat"
+    allow = true

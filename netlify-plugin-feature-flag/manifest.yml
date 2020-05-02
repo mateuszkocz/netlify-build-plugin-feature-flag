@@ -1,5 +1,13 @@
 name: netlify-plugin-feature-flag
 inputs:
-  - name: test
-    description: test arg
+  - name: for-url
+    description: URL of the site this plugin will apply for.
     required: true
+  - name: ignore
+    description: Ignore branches matching the current condition.
+    default: false
+  - name: allow
+    description: Allow only branches matching the current condition.
+    default: false
+  - name: branch-prefix
+    description: Use this prefix to determine the match.
